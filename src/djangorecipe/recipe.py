@@ -75,7 +75,7 @@ class Recipe(object):
                     'Skipping creating of project: %(project)s since '
                     'it exists' % self.options)
 
-        return script_paths + [location]
+        return script_paths
 
     def create_manage_script(self, extra_paths, ws):
         project = self.options.get('projectegg', self.options['project'])
